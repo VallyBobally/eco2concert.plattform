@@ -18,10 +18,6 @@ prompted by VS Code.
 
 To get started, run in your R console or VS Code R terminal:
 
-Details on the structure used by the **golem** package can be found in
-the [here for example](https://engineering-shiny.org/golem.html). But
-below you find my personal notes on it.
-
 ``` r
 install.packages("golem")
 library(golem)
@@ -33,6 +29,10 @@ You may be prompted to install some dependencies. I would just install
 them all.
 
 ## Project Structure
+
+Details on the structure used by the **golem** package can be found in
+the [here for example](https://engineering-shiny.org/golem.html). But
+below you find my personal notes on it.
 
 1.  **`Eco2concert.plattform.Rproj`**
     - Only useful when using **RStudio**  
