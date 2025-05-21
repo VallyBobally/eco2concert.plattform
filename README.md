@@ -5,16 +5,38 @@
 
 <!-- badges: start -->
 
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 ## Installation
 
-You can install the development version of `{eco2concert.plattform}`
-like so:
+### Working with **golem** in VS Code
+
+Although **golem** is designed for RStudio, it’s all standard R code and
+a familiar folder structure—so VS Code works just fine.  
+\> **Tip:** Install the “R” extension (and any recommended add-ons) when
+prompted by VS Code.
+
+To get started, run in your R console or VS Code R terminal:
 
 ``` r
-install.packages("https://github.com/VallyBobally/...", repos = NULL, type = "source")
+install.packages("golem")
+#> Installing package into 'C:/Users/apgkz/AppData/Local/Temp/RtmpGWT5b3/temp_libpath5f5c6fc9203c'
+#> (as 'lib' is unspecified)
+#> package 'golem' successfully unpacked and MD5 sums checked
+#> 
+#> The downloaded binary packages are in
+#>  C:\Users\apgkz\AppData\Local\Temp\RtmpQ3Qmun\downloaded_packages
+library(golem)
+
+golem::install_dev_deps()
+#> Warning in golem::install_dev_deps(): `install_dev_deps()` will not install dev
+#> dependencies in non-interactive mode if `force_install` is not set to `TRUE`.
 ```
+
+You may be prompted to install some dependencies. I would just install
+them all.
 
 ## Run
 
@@ -32,7 +54,7 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2025-05-20 10:25:14 CEST"
+#> [1] "2025-05-21 11:11:05 CEST"
 ```
 
 Here are the tests results and package coverage:
@@ -43,18 +65,19 @@ devtools::check(quiet = TRUE)
 #> ℹ Installed roxygen2 version (7.3.2) doesn't match required (7.1.1)
 #> ✖ `check()` will not re-document this package
 #> ── R CMD check results ─────────────────── eco2concert.plattform 0.0.0.9000 ────
-#> Duration: 18.9s
+#> Duration: 24.8s
 #> 
-#> ❯ checking for future file timestamps ... NOTE
-#>   unable to verify current time
+#> ❯ checking package dependencies ... NOTE
+#>   Package suggested but not available for checking: 'spelling'
 #> 
-#> 0 errors ✔ | 0 warnings ✔ | 1 note ✖
+#> ❯ checking package subdirectories ... NOTE
+#>   Problems with news in 'NEWS.md':
+#>   No news entries found.
+#> 
+#> 0 errors ✔ | 0 warnings ✔ | 2 notes ✖
 ```
 
 ``` r
 covr::package_coverage()
-#> eco2concert.plattform Coverage: 0.00%
-#> R/app_config.R: 0.00%
-#> R/app_ui.R: 0.00%
-#> R/run_app.R: 0.00%
+#> Error in loadNamespace(x): there is no package called 'covr'
 ```

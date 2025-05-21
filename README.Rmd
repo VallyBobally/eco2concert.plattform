@@ -21,11 +21,20 @@ output: github_document
 
 ## Installation
 
-You can install the development version of `{eco2concert.plattform}` like so:
+### Working with **golem** in VS Code  
+Although **golem** is designed for RStudio, it’s all standard R code and a familiar folder structure—so VS Code works just fine.  
+> **Tip:** Install the “R” extension (and any recommended add-ons) when prompted by VS Code.
+
+To get started, run in your R console or VS Code R terminal:
 
 ```{r}
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+install.packages("golem")
+library(golem)
+
+golem::install_dev_deps()
 ```
+You may be prompted to install some dependencies. I would just install them all.
+
 
 ## Run
 
