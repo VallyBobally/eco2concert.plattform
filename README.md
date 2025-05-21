@@ -30,9 +30,9 @@ them all.
 
 ## Project Structure
 
-Details on the structure used by the **golem** package can be found in
-the [here for example](https://engineering-shiny.org/golem.html). But
-below you find my personal notes on it.
+Details on the structure used by the **golem** package can be found
+[here for example](https://engineering-shiny.org/golem.html). But below
+you find my personal notes on it.
 
 1.  **`Eco2concert.plattform.Rproj`**
     - Only useful when using **RStudio**  
