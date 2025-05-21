@@ -9,16 +9,18 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-## Installation
-
 ### Working with **golem** in VS Code
 
 Although **golem** is designed for RStudio, it’s all standard R code and
 a familiar folder structure so VS Code works just fine.  
-\> **Tip:** Install the “R” extension (and any recommended add-ons) when
+**Tip:** Install the “R” extension (and any recommended add-ons) when
 prompted by VS Code.
 
 To get started, run in your R console or VS Code R terminal:
+
+Details on the structure used by the **golem** package can be found in
+the [here for example](https://engineering-shiny.org/golem.html). But
+below you find my personal notes on it.
 
 ``` r
 install.packages("golem")
