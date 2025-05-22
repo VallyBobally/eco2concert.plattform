@@ -11,9 +11,9 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 ## What is this?
 
-This is a **golem** package for the **eco2concert** project. It contains
-the code for the Shiny app that will be used to visualize the data from
-the
+This is a package created with **golem** for the **eco2concert**
+project. It contains the code for the Shiny app that will be used to
+visualize the data from the
 [eco2concert](https://www.bmv.de/SharedDocs/DE/Artikel/DG/mfund-projekte/eco2concert.html)
 project and support with sustiainable festival organization.
 
