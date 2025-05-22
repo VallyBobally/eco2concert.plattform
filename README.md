@@ -25,7 +25,7 @@ library(golem)
 golem::install_dev_deps()
 ```
 
-You may be prompted to install some dependencies. I would just install
+You may get prompted to install some dependencies. I would just install
 them all.
 
 ## Project Structure
@@ -89,7 +89,7 @@ you find my personal notes on it.
     - These files include small, reusable snippets of code/functions
       (e.g., 3 lines long, so no extra module script is necessary)
     - For example:
-      - define aliases like `rv` for `reactiveValues` to save keystrokes
+      - Define aliases like `rv` for `reactiveValues` to save keystrokes
       - Functions to turn a list into HTML tags
 11. **`tests/`** folder
     - Created by `{golem}` package automatically  
@@ -130,24 +130,25 @@ you find my personal notes on it.
   code there
 - The first part of the module contains the function for the UI code,
   the second part the one for the server code
-- The `NS` function should always be called on the **UI-element id** or
-  the **server-session id**
+- Just two quick things I came across and want to share:
+  - The `NS` function should always be called on the **UI-element id**
+    or the **server-session id**
 
-``` r
-ns <- NS(id)
-```
+  ``` r
+  ns <- NS(id)
+  ```
 
-- `tagList()` makes sure the output of the function is not one single
-  object but a list of objects (e.g., if you want to return/render
-  multiple UI elements)
+  - `tagList()` makes sure the output of the function is not one single
+    object but a list of objects (e.g., if you want to return/render
+    multiple UI elements)
 - You can use the modules I’ve already created as templates for further
   modules or look into this
-  [video](https://www.youtube.com/watch?v=_zm2GuSrZ14&t=6319s) which
-  I’ve found very helpful
+  [video](https://www.youtube.com/watch?v=_zm2GuSrZ14&t=6319s) which I
+  found very helpful
 
 ### Other stuff
 
-- in `02_dev.R` you find further code to initiate all sorts of files
+- In `02_dev.R` you find further code to initiate all sorts of files
   (vignettes, js_handlers, … ) and how to incorporate data sets or to
   check for code coverage
 - There are functions to initate workflows with GitHub actions or other
@@ -157,15 +158,13 @@ ns <- NS(id)
 
 ### in VS Code
 
-- either run the whole `run_dev.R` script (for documenting purposes
+- Either run the whole `run_dev.R` script (for documenting purposes
   e.g.) or simply run `run_app()` in the console
-- the Shiny App will open in a new VS Code Window (by clicking on the
-  URL in the console, you can open it in your browser) 
-
-### in RStudio
-- you can go to the ‘Addins’ tab below the menu bar and select ‘Run
+- The Shiny App will open in a new VS Code Window (by clicking on the
+  URL in the console, you can open it in your browser) \### in RStudio
+- You can go to the ‘Addins’ tab below the menu bar and select ‘Run
   run_dev.R’ under the ‘golem’ section  
-- or do it the same way as for VS Code
+- Or do it the same way as for VS Code
 
 ## Let’s start developing!
 
