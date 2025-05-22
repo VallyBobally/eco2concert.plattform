@@ -177,8 +177,9 @@ you find my personal notes on it.
 
 ### in VS Code
 
-- Either run the whole `run_dev.R` script (for documenting purposes
-  e.g.) or simply run `run_app()` in the console
+- Either run the whole `run_dev.R` script (definitely at **first
+  execution** + for documenting purposes e.g.) or simply run `run_app()`
+  in the console
 - The Shiny App will open in a new VS Code Window (by clicking on the
   URL in the console, you can open it in your browser) \### in RStudio
 - You can go to the ‘Addins’ tab below the menu bar and select ‘Run
