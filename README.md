@@ -9,6 +9,14 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
+## What is this?
+
+This is a **golem** package for the **eco2concert** project. It contains
+the code for the Shiny app that will be used to visualize the data from
+the
+[eco2concert](https://www.bmv.de/SharedDocs/DE/Artikel/DG/mfund-projekte/eco2concert.html)
+project and support with sustiainable festival organization.
+
 ## Working with **golem** in VS Code
 
 Although **golem** is designed for RStudio, it’s all standard R code and
@@ -27,6 +35,17 @@ golem::install_dev_deps()
 
 You may get prompted to install some dependencies. I would just install
 them all.
+
+## General idea
+
+The general idea of the **golem** package is to create a Shiny app as a
+package. This allows for better organization of the code and makes it
+easier to share and deploy the app. The package structure is designed to
+separate the UI and server components, making it easier to manage and
+maintain the code. Modules of the UI are build in a way that they can be
+reused and shared across different parts of the app and many people can
+work on the same app at the same time without stepping on each other’s
+toes.
 
 ## Project Structure
 
