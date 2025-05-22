@@ -160,7 +160,9 @@ ns <- NS(id)
 - either run the whole `run_dev.R` script (for documenting purposes
   e.g.) or simply run `run_app()` in the console
 - the Shiny App will open in a new VS Code Window (by clicking on the
-  URL in the console, you can open it in your browser) \### in RStudio
+  URL in the console, you can open it in your browser) 
+
+### in RStudio
 - you can go to the ‘Addins’ tab below the menu bar and select ‘Run
   run_dev.R’ under the ‘golem’ section  
 - or do it the same way as for VS Code
