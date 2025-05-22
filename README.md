@@ -99,7 +99,7 @@ you find my personal notes on it.
 
 ## Module Structure
 
-# Creating or adding modules
+### Creating or adding modules
 
 - Use `golem::add_module()` to create a new module (can be run directly
   from the R console or by executing the code in the `dev/02_dev.R`
@@ -112,7 +112,7 @@ you find my personal notes on it.
   corresponding test file in the `tests/testthat/` folder is added so I
   suggest we stick to this procedure of creating new modules
 
-# Module structure (documentation part)
+### Module structure (documentation part)
 
 - Above the actual function code you can write `Roxygen2` documentation
   from which you can create help files using `devtools::document()` or
@@ -123,7 +123,7 @@ you find my personal notes on it.
   with `@noRD`, import specific functions from packages with
   `@importFrom`and the output (`@return`) in the module script
 
-# Module structure (ui and server part)
+### Module structure (ui and server part)
 
 - You basically simply define a function to be integrated into the
   overarching `app_ui.R` and `app_server.R` files without cluttering the
@@ -145,7 +145,7 @@ ns <- NS(id)
   [video](https://www.youtube.com/watch?v=_zm2GuSrZ14&t=6319s) which
   I’ve found very helpful
 
-## Other stuff
+### Other stuff
 
 - in `02_dev.R` you find further code to initiate all sorts of files
   (vignettes, js_handlers, … ) and how to incorporate data sets or to
@@ -155,12 +155,12 @@ ns <- NS(id)
 
 ## How to run the app
 
-# in VS Code
+### in VS Code
 
 - either run the whole `run_dev.R` script (for documenting purposes
   e.g.) or simply run `run_app()` in the console
 - the Shiny App will open in a new VS Code Window (by clicking on the
-  URL in the console, you can open it in your browser) \# in RStudio
+  URL in the console, you can open it in your browser) \### in RStudio
 - you can go to the ‘Addins’ tab below the menu bar and select ‘Run
   run_dev.R’ under the ‘golem’ section  
 - or do it the same way as for VS Code
