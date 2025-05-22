@@ -181,7 +181,10 @@ you find my personal notes on it.
   execution** + for documenting purposes e.g.) or simply run `run_app()`
   in the console
 - The Shiny App will open in a new VS Code Window (by clicking on the
-  URL in the console, you can open it in your browser) \### in RStudio
+  URL in the console, you can open it in your browser)
+
+### in RStudio
+
 - You can go to the ‘Addins’ tab below the menu bar and select ‘Run
   run_dev.R’ under the ‘golem’ section  
 - Or do it the same way as for VS Code
